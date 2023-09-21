@@ -1,0 +1,14 @@
+name: 'Supply Drop'
+special_text: 'At the start of the battle, players randomly select two different objective markers in No Man’s Land: the first selected is the Alpha objective, the second is the Omega objective. At the start of the fourth battle round, the Alpha objective is removed from the battlefield. At the start of the fifth battle round, all objective markers in No Man’s Land apart from the Omega objective are also removed.'
+battle_rounds:
+  two: &battle_round_two_all
+    text: &battle_round_two_text 'At the end of each Command phase, the player whose turn it is scores 5VP for each objective marker they control in No Man’s Land.'
+    points: &battle_round_two_points [0, 5, 10, 15]
+  three: *battle_round_two_all
+  four: *battle_round_two_all
+  five:
+    text: 'The player who has the first turn scores 15VP at the end of their command phase if they control the objective marker in No Man’s Land.\n\nThe player who has the second turn scores 15VP at the end of their turn if they control the objective maker in No Man’s Land'
+    points: [0, 15]
+  end:
+    text: null
+    points: null

@@ -1,0 +1,6 @@
+name: 'Scrambler Fields'
+special_rule: 'In this mission:
+- Players’ units with the Infiltrators ability cannot be set up within range of an objective marker that is either in No Man’s Land or their opponent’s deployment zone.
+- Players’ units with the Scout ability that make a move before the first turn begins cannot end that move within range of an objective marker that is either in No Man’s Land or their opponent’s deployment zone.
+- If any rule is used to redeploy a unit, that rule cannot be used to set up that unit within range of an objective marker in No Man’s Land.
+- When a player’s Reserves and Strategic Reserves units are set up on the battlefield, they cannot be set up within range of an objective marker that is either in No Man’s Land or their opponent’s deployment zone.'

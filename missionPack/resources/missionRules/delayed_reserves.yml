@@ -1,0 +1,2 @@
+name: 'Delayed Reserves'
+special_rule: 'In this mission, until the start of the third battle round, each time a Reserves or Strategic Reserves unit wishes to arrive on the battlefield, the controlling player must make a Reserves roll for it. To do so, that player rolls one D6: on a 3+, that unit arrives on the battlefield; otherwise, the Reserves roll fails and that unit does not arrive this turn.'

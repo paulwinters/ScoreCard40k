@@ -1,0 +1,2 @@
+name: 'Sweep and Clear'
+special_rule: 'In this mission, if a player controls an objective marker at the end of their Command phase, that objective marker remains under their control, even if they have no models within range of it, unless their opponent controls it at the end of any subsequent Command phase.'

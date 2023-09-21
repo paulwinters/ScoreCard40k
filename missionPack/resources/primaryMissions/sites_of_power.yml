@@ -1,0 +1,17 @@
+name: 'Sites of Power'
+special_text: 'The objective markers in No Man’s Land are sites of power. At the end of each command phase, the player whose turn it is empowers all sites of power that they control that have one or more *Character* models from their army within range; each site of power remains empowered by that player while one or more of their *Character* models remains within range of it'
+battle_rounds:
+  two: &battle_round_two_all
+    text: &battle_round_two_text 'At the end of each player’s Command phase, the player whose turn it is scores VP as follows (up to 15VP per turn);
+- 3VP for each objective marker they control
+- 3VP for each site of power they have empowered
+Note that these are cumulative, so a player that controls one objective marker they have also empowered will score 6VP that turn'
+    points: &battle_round_two_points [0, 3, 6, 9, 12, 15]
+  three: *battle_round_two_all
+  four: *battle_round_two_all
+  five:
+    text: 'The player who has the first turn scores VP as described above.\n\nThe player who has the second turn scores VP as described above, but does so at the end of their turn instead of at the end of their Command phase.'
+    points: *battle_round_two_points
+  end:
+    text: null
+    points: null

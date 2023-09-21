@@ -1,0 +1,14 @@
+name: 'Take and Hold'
+special_text: null
+battle_rounds:
+  two: &battle_round_two_all
+    text: &battle_round_two_text 'At the end of each Command phase, the player whose turn it is scores 5VP for each objective marker they control (up to 15VP per turn)'
+    points: &battle_round_two_points [0, 5, 10, 15]
+  three: *battle_round_two_all
+  four: *battle_round_two_all
+  five:
+    text: 'The player who has the first turn scores VP as described above.\n\nThe player who has the second turn scores VP as described above, but does so at the end of their turn instead of at the end of their Command phase.'
+    points: *battle_round_two_points
+  end:
+    text: null
+    points: null

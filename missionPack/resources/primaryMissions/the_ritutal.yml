@@ -1,0 +1,14 @@
+name: 'The Ritual'
+special_text: 'When setting up the battlefield, remove all objective markers in No Man’s Land except the one closest to the centre of the battlefield.\n\nIn each player’s Shooting phase, the player whose turn it is can select one unit from their army that is not Battle-shocked and is eligible to shoot. Until the end of that turn, that unit is not eligible to shoot or declare a charge. At the end of that turn, the player whose turn it is can set up one objective marker wholly within No Man’s Land and within 1\" of that unit provided it can be set up exactly 9\" from one other objective marker and not within 6\" of any other objective marker.'
+battle_rounds:
+  two: &battle_round_two_all
+    text: &battle_round_two_text 'At the end of each Command phase, the player whose turn it is scores 5VP for each objective marker in No Man’s Land they control (up to 15VP per turn).'
+    points: &battle_round_two_points [0, 5, 10, 15]
+  three: *battle_round_two_all
+  four: *battle_round_two_all
+  five:
+    text: 'The player who has the first turn scores VP as described above.\n\nThe player who has the second turn scores VP as described above, but does so at the end of their turn instead of at the end of their Command phase.'
+    points: *battle_round_two_points
+  end:
+    text: null
+    points: null

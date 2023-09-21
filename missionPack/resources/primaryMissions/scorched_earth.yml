@@ -1,0 +1,14 @@
+name: 'Scorched Earth'
+special_text: 'From the second battle round, in each player’s Shooting phase, the player whose turn it is can select one unit from their army that is not Battle-shocked and is eligible to shoot. Until the end of that turn, that unit is not eligible to shoot or declare a charge. At the start of its controlling player’s next Command phase, if that unit is within 1\" of an objective marker that the player whose turn it is controls, that objective marker is burned and removed from the battlefield'
+battle_rounds:
+  two: &battle_round_two_all
+    text: &battle_round_two_text 'At the end of each Command phase, the player whose turn it is scores 5VP for each objective marker they control (up to 15VP per turn)'
+    points: &battle_round_two_points [0, 5, 10, 15]
+  three: *battle_round_two_all
+  four: *battle_round_two_all
+  five:
+    text: 'The player who has the first turn scores VP as described above.\n\nThe player who has the second turn scores VP as described above, but does so at the end of their turn instead of at the end of their Command phase.'
+    points: *battle_round_two_points
+  end:
+    text: 'Each player scores 5VP if one or more objective markers in No Man’s Land were burned by a unit from their army, and 10VP if the objective marker in their opponent’s deployment zone was burned.'
+    points: [0, 5, 10]

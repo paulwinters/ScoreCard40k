@@ -1,0 +1,14 @@
+name: 'Purge the Foe'
+special_text: 'At the end of the battle round, each player scores 4VP if one of more enemy units were destroyed that battle round, and an extra 4VP if more enemy units than friendly units were destroyed that battle round.\n\nNote that a unit can, if it is returned to the battlefield for any reason, potentially contribute to this Primary Mission several times (assuming it is returned and subsequently destroyed several times over)'
+battle_rounds:
+  two: &battle_round_two_all
+    text: &battle_round_two_text 'At the end of each Command phase, the player whose turn it is scores 4VP if they control one or more objective markers, and an extra 4VP if they control more objective markers than their opponent controls.'
+    points: &battle_round_two_points [0, 4, 8]
+  three: *battle_round_two_all
+  four: *battle_round_two_all
+  five:
+    text: 'The player who has the first turn scores VP as described above.\n\nThe player who has the second turn scores VP as described above, but does so at the end of their turn instead of at the end of their Command phase.'
+    points: *battle_round_two_points
+  end:
+    text: null
+    points: null

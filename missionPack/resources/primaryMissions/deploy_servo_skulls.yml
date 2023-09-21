@@ -1,0 +1,16 @@
+name: 'Deploy Servo-Skulls'
+special_text: 'The objective markers that start the battle in No Man’s Land are servo-skulls. At the end of each turn, each of these objective markers can be moved up to 6\" in any direction by the player that controls it. When moving objective markers, they cannot end that move on top of any other objective marker or model, or inside impassable parts of terrain features (such as the walls of a ruin).'
+battle_rounds:
+  two: &battle_round_two_all
+    text: &battle_round_two_text 'At the end of each turn, the player whose turn it is scores VP as follows:
+- 2VP for each servo-skull that is wholly within 12\" of their opponent’s deployment zone.
+- 5VP for each servo-skull that is wholly within 6\" of their opponent’s deployment zone.
+- 8VP for each servo-skull that is wholly within their opponent’s deployment zone.
+Note that these are cumulative, so if a servo-skull is wholly within your opponent’s deployment zone, you would score 15VP from that servo-skull at the end of your turn.'
+    points: &battle_round_two_points [0, 2, 4, 5, 6, 8, 10, 15, 16. 20, 24, 25, 30, 32, 40, 48]
+  three: *battle_round_two_text
+  four: *battle_round_two_text
+  five: *battle_round_two_text
+  end:
+    text: null
+    points: null

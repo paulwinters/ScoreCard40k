@@ -1,0 +1,12 @@
+name: 'Priority Targets'
+special_text: null
+battle_rounds:
+  two: &battle_round_two_all
+    text: &battle_round_two_text 'At the end of each Command phase, the player whose turn it is scores 5VP for each objective marker they control (up to 10VP per turn)'
+    points: &battle_round_two_points [0, 5, 10]
+  three: *battle_round_two_all
+  four: *battle_round_two_all
+  five: *battle_round_two_all
+  end:
+    text: 'Each player scores 5VP for each objective marker they control (up to 15VP per player)'
+    points: [0, 5, 10, 15]
